@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>tut07-switchstatements.html : Using switch Statement To Test For Conditions</title>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/tut07-switchstatements.js"></script>
+    </head>
+
+    <body>
+
+        <div>
+
+        <h1>Using Switch Statements to Test For Conditions</h1>
+
+        <p>So far, we've looked at if, if-else, and if-else-if statements in the code we have 
+        been using. However, sometimes there may be just a simple set of cases that need 
+        lightweight checking for things, and some limited output based on each. In such 
+        cases, a 'switch' statement can be used, though switch statements are used less 
+        frequently than other control and flow methods. </p>
+
+        <p>Enter how you're feeling today: happy, sad, hungry, or something else if desired. 
+        The output at the bottom of the screen will appear based on your entry. </p>
+
+        <p>Be sure to check out the <a href="js/tut07-switchstatements.js" target="_blank">
+        actual javascript code</a> found in the 'js' directory accompanying this set of exercises
+        to see the additional comments I placed within it for those who are also just 
+        learning this technology.</p>
+
+        <form name="form" id="form" method="post" action="">
+
+            <p><label for = "emotionalState">What is your status:</label></p>
+            <p><input name="emotionalState" id="emotionalState" type="text"></p>
+
+            <!-- I was having a dickens of a time with the submit button on the next line. 
+            The output to the p element at the end (id="p1") would flicker, disappearing 
+            rapidly after clicking it. I was using button type="submit" rather than 
+            button type="button" which was causing the page to refresh. The page will 
+            auto-submit, clearing what was output. Use type "button" when trying to 
+            submit things in the way I am here in these examples. -->
+
+            <p><button type="button" onclick="emotionTracker();">Confide In Me</button></p>
+
+        </form>
+
+        <p>Output:</p>
+
+        <p id="p1"></p>
+
+    </div>
+
+    </body>
+
+</html>

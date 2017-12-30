@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>tut05-ternaryTrueFalse.html : Check to see which number is less or greater</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/tut05-ternaryTrueFalse.js"></script>
+
+    </head>
+
+    <body>
+    
+        <div>
+
+        <h1>Using the Ternary Operator to Compare Two Numbers (as an example)</h1>
+
+        <p>Compared to the last couple of exercises in which we played around with if-else 
+        conditional statements, we can also use a ternary operator in JavaScript to make a 
+        comparison between two items. It operates as such:</p>
+
+        <p>something (true or false) ? (true, so do this) : (false, so do this instead);</p>
+
+        <p>In this example, the user enters two numbers. They are compared with such a 
+        ternary operator. If true, the first statement after the question mark is performed. 
+        If false, the one after the colon is performed. </p>
+
+        <p>Be sure to have a look at <a href="js/tut05-ternaryTrueFalse.js" target="_blank">
+        the actual JavaScript file</a> in the 'js' directory to see the comments I placed within 
+        it for further explanation of the following code. The code for this little exercise 
+        looks as follows:</p>
+
+<pre>
+
+window.onload = function main() {
+
+    var firstNum = parseInt(prompt("Please enter the first number to compare (firstNum): "));
+    var secondNum = parseInt(prompt("Please enter the second number to compare (secondNum): "));
+    
+    alert("Checking to see if " + firstNum + " is less than " + secondNum + "...");
+
+    pId = document.getElementById("p1");
+
+    firstNum &lt; secondNum ? 
+        pId.innerHTML = "firstNum, " + firstNum + ", is less than secondNum, " + secondNum :
+        pId.innerHTML = "firstNum, " + firstNum + ", is greater than secondNum, " + secondNum;
+
+}
+
+</pre>
+
+        <p>The output for the user in this case shall now be displayed below:</p>
+
+        <p id="p1"></p>
+
+        </div>
+
+    </body>
+
+
+</html>

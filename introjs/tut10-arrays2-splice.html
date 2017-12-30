@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>tut10-arrays2-splice.html : Using Splice to Modify Arrays</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/tut10-arrays2-splice.js"></script>
+    </head>
+
+    <div>
+    <body>
+
+        <h1>Arrays2: Using Splice to Modify Arrays</h1>
+    
+        <p>In the previous exercise (<a href="tut09-arrays.html">tut09-arrays.html</a>) we 
+        learned how to use various array functions to add, remove, and modify elements:</p>
+    
+        <p>
+            <ul type="square">
+                <li>push() - Add an element to the end of an array (returns length of array)</li>
+                <li>pop() - Remove an element from the end of an array (returns element)</li>
+                <li>unshift() - Add an element to the beginning of an array (returns length of array)</li>
+                <li>shift() - Remove an element from beginning of array (returns element)</li>
+            </ul>
+        </p>
+        <p>Splice is used in the following way:</p>
+        
+        <p>arrayName.splice(a,b,c);</p>
+
+        <p>Where 'a' is the element of the array where you want to start the operation, 
+        'b' is the number of elements to remove, and 'c' (and others) are the elements 
+        you want to add beginning at the location signified by 'a'.  If you don't want to 
+        remove anything, let 'b' = 0. </p>
+
+        <p>I am making this page similar to the previous one in tut09-arrays.html, with the 
+        exception that the JavaScript program will be using the splice() function rather than 
+        the others mentioned earlier.</p>
+
+        <p>Our array for this example is: </p>
+
+        <p>tutorialArray = [<span id="tutorialArray"></span>]</p>
+
+        <form name="form" id="tutorialArrayForm" method="post" action="">
+
+            <p>
+            <label for = "spliceBeginElement">Enter splice() Begin Element: </label>
+                <input name="spliceBeginElement" id="spliceBeginElement" type="text"> 
+            <label for = "spliceNumRemoveItems">How many elements to remove? </label>
+                <input name="spliceNumRemoveItems" id="spliceNumRemoveItems" type="text"></p>
+            </p>
+            <p>
+            <label for = "addItem1">Add item 1: </label>
+                <input name="addItem1" id="addItem1" type="text"> 
+            <label for = "addItem2"> Add item 2: </label>
+                <input name="addItem2" id="addItem2" type="text">
+            <label for = "addItem3"> Add item 3: </label>
+                <input name="addItem3" id="addItem3" type="text">
+            </p>
+            <p>
+            <button type="button" onclick="main();">Do it!</button> 
+            <button type="button" onclick="resetForm();">Reset Fields</button>
+            </p>
+
+        </form>
+
+    </body>
+    </div>
+
+</html>

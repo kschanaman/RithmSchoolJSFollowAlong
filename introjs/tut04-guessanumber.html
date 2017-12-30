@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>tut04-guessanumber.html : Guess a Number Between 1 and 10</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/tut04-guessanumber.js"></script>
+    </head>
+
+    <body>
+
+        <div>
+
+        <h1>Guess a Number Between 1 and 10</h1>
+
+        <p>This little program asks the user to guess the secret number which is between 1 
+        and 10. A variable named 'numTries' will be established and set to 1 try. This is 
+        because in this program, it is impossible to not try at least one guess. But if that 
+        first guess is incorrect, the program enters a while loop. Each time a guess is 
+        done and it's incorrect, the variable numTries will be incremented by one. Then, 
+        depending on whether or not number of guesses was three or less, or more than three, 
+        an appropriate response will be printed to the browser screen at the bottom.</p>
+
+        <p>Be sure to have a look at <a href="js/tut04-guessanumber.js" target="_blank">
+        the actual JavaScript file in the 'js' directory</a> to see the comments I placed 
+        within it for further explanation of the following code. The code for this little 
+        exercise looks as follows:</p>
+
+<pre>
+
+window.onload = function main() {
+
+var secretNumber = 8;
+var guess = 0;
+var pId = null;
+var numTries = 1;
+
+guess = parseInt(prompt("Please guess the secret number (hint: it is between 1 and 10: "));
+            
+    while (guess !== secretNumber) {
+        guess = parseInt(prompt("Incorrect! Please try again: "));
+        numTries++;
+    }
+    
+    pId = document.getElementById("p1");
+        
+    if (numTries > 1 && numTries <= 3) {
+        pId.innerHTML = "Contrats! You guessed it in three tries or less!! The secret number " + 
+            "was indeed " + secretNumber + "! Good Job!!&lt;br&gt;";
+    } else {     
+        pId.innerHTML = "Congrats! You guessed the secret number! It is indeed " + secretNumber + "!" + 
+            " But it took you " + numTries + " tries to figure it out. Better luck next time!&lt;br&gt;";    
+    }
+}
+</pre>
+
+        <p>And now here is the congratulation message once the user has guessed correctly: </p>
+
+        <p id="p1"></p>
+    </div>
+
+    </body>
+</html>

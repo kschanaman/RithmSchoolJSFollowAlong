@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>tut06-usingformsforinput.html : Using Forms Instead of Prompt Boxes</title>
+    
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/tut06-usingformsforinput.js"></script>
+    </head>
+
+    <body>
+
+        <div>
+
+        <h1>Using Forms Instead of Prompt Boxes</h1>
+
+        <p>Instead of continuing to use prompt() popups while learning JavaScript, I felt 
+        it is now time to re-learn how to use forms for input, and using JavaScript to read 
+        and process those items. After all, we ARE using a language meant for doing web page 
+        stuff, correct?</p>
+
+        <p>At the time of this writing, it has been many years since I last did any web 
+        developement. I was good at it at the time (2000 - 2004) but then life got in the 
+        way with jobs and family and I had to put things down for a long period of time 
+        (it's 2017 -- almost 2018 now).  I got very rusty with forms, and so here I am 
+        starting over. Not a bad thing since HTML5 has added much to forms these days 
+        anyway, which must be learned.</p>
+
+        <p>ABOUT THIS PAGE</p>
+
+        <p>The form will ask the visitor for first name, last name, and age. We will use 
+        the user's age to determine (in JavaScript) if he/she is old enough to join us for an 
+        alcoholic beverage. Depending on the answer, a relevant response will be given 
+        at the bottom of the page. Be sure to check out <a href="js/tut06-usingformsforinput.js" 
+        target="_blank">the actual javascript code file</a> in the "js" directory included 
+        with these exercise examples to see all comments I may have added into it.</p>
+
+        
+        <form name = "form" id="form" method="post" action="">
+            <p class="FirstName">
+                <label for = "FirstName">First Name:</label>
+            </p>
+            <p>
+                <input name="FirstName" id="FirstName" type="text">
+            </p>
+            <p class="LastName">
+                <label for = "LastName">Last Name: </label>
+            </p>
+            <p>
+                <input name = "LastName" id="LastName" type="text">
+            </p>
+            <p class="Age">
+                <label for = "Age">Age: </label>
+            </p>
+            <p>
+                <input name = "Age" id="Age" type="text">
+            </p>
+            <p class="submit">
+                <button type="button" onclick="main();">Submit</button>
+            </p>
+        </form>
+
+            <p>Output:</p>
+
+            <p id="p1"></p>
+
+        </div>
+
+    </body>
+</html>

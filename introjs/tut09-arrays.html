@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>tut09-arrays.html : Arrays - Creating, changing, push, pop, shift, unshift, splice</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/tut09-arrays.js"></script>
+    </head>
+
+    <div>
+
+    <body>
+
+    <h1>Arrays: Creating, Changing, Push/Pop, Shift/Unshift</h1>
+
+    <p>Arrays are quite useful for holding lists of items in a sequential container. 
+    An array is created by creating a variable to contain it so it is accessible in the 
+    program. The elements go within brackets. An array looks like this:</p>
+    
+    <p>var array = [1, 2, 3, 4];</p>
+
+    <p>Array elements are counted from zero. So in the above, 1 is inside of element 0, 
+    2 is inside of element 1, 3 is inside of element 2, and 4 is inside of element 3.</p>
+
+    <p>This page let's us play around with an array provided in a JavaScript program connected 
+    to this page. Below, the program will have printed a built-in initial array onto this 
+    page so we can change, add, and remove items to/from it. Don't forget to check out the 
+    <a href="tut09-arrays.js" target="_blank">actual JavaScript code</a> found in the 
+    'js' directory to read through commentary and explanations I may have added for the 
+    benefit of us all.</p>
+
+    <p>Array initialized: var playfulArray = <span id="displayArray"></span></p>
+    
+    <form name="changeElementForm" id="changeElementForm" method="post" action="">
+        <p>
+            <label for = "elementNumber">Enter element number:&nbsp; </label>
+            <input name="elementNumber" id="elementNumber" type="text"> 
+            <label for = "changeTo"> &nbsp;Change it to: </label>
+            <input name="changeTo" id="changeTo" type="text">
+        </p>
+        <p>
+            <label for = "addBeginning">Place At Front (unshift): </label>
+            <input name="addBeginning" id="addBeginning" type="text"> 
+            <input name="removeFront" id="removeFront" type="checkbox">Remove From Front (shift)
+        </p>
+            <label for = "pushTo">Push onto end ( push ): </label>
+            <input name="pushTo" id="pushTo" type="text">
+            <input name="popOff" id="popOff" type="checkbox">Pop Off End (pop)</p>
+        <p> 
+            <button type="button" id="changerButton" onclick="main();">Perform Operation</button> 
+        </p>
+        
+    </form>
+
+    </div>
+
+    </body>
+
+</html>

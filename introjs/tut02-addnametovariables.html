@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>tut02-addnametovariables.html : Prompt for first and last names, output msg</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/tut02-addnametovariables.js"></script>
+    </head>
+
+    <body>
+    
+    <h1>Prompt, Assign to Variables, Output to innerHTML</h1>
+
+    <p>
+    This script prompts the user for first and last names, assigns them to variables, then 
+    uses getElementById to grab a paragraph with the id of 'id01'.  The message is put 
+    together and then displayed within that tagged paragraph.</p>
+
+    <p>Be sure to have a look at the <a href="js/tut02-addnametovariables.js" target="_blank">
+    actual JavaScript file</a> in the 'js' directory 
+    to see the comments I placed within it for further explanation of the following code. 
+    The code for this little exercise looks as follows:</p>
+
+    <pre>
+        var firstName, lastName;
+        firstName = prompt("What is your first name, friend?");
+        lastName = prompt("What is your last name, friend?");
+        
+        var pId = document.getElementById=("p1");
+        pId.innerHTML = "Hello, " + firstName + " " + lastName + ", it's very nice to meet you!&lt;br&gt;");
+    </pre>
+
+    <p>And now here is the output from our script:</p>
+
+    <p id="p1"></p>
+
+    </body>
+
+</html>
+    

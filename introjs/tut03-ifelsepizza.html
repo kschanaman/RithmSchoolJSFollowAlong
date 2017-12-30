@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset = "utf=8">
+        <title>tut03-ifelsepizza.html : Introduction to Using If-Else to Change Program Flow</title>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/tut03-ifelsepizza.js"></script>
+    </head>
+
+    <h1>Using if-else in JavaScript For Program Flow</h1>
+
+    <p>This simple page uses a javascript file named tut03-ifelsepizza.js to determine whether or 
+    not the user shares in the same food tastes as the program does. The program loves pizza. 
+    If the user shares in the same favorite food (pizza) then the program issues a 'me too' 
+    response.</p>
+
+    <p>If the user likes something else other than pizza, it's still cool with the program. But 
+    it will boast that it likes pizza and doesn't share in the user's taste in cuisine :D</p>
+
+    <p>Be sure to have a look at <a href="js/tut03-ifelsepizza.js" target="_blank">
+    the actual JavaScript file in the 'js' directory</a> to see the comments I placed 
+    within it for further explanation of the following code. The code for this little 
+    exercise looks as follows:</p>
+    
+    <pre>
+
+        window.onload = function main() {
+            
+            var favoriteFood = prompt("What's your favorite food?");
+            
+            pId = document.getElementById("p1");
+           
+            if (favoriteFood === "pizza" || favoriteFood === "Pizza") {
+                pId.innerHTML="Whoah! My favorite food is pizza too!");
+            } else {
+                pId.innerHTML="That's cool. My favorite food is pizza.");
+            }
+        
+        }
+
+    </pre>
+
+    <p>And now here is the output on what you entered into the prompt at the outset:</p>
+
+    <p id="p1"></p>
+
+</html>

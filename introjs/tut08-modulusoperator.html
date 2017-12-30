@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>tut08-modulusoperator.html : See if a number has a remainder - divisible by...</title>
+    
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/tut08-modulusoperator.js"></script>
+    </head>
+
+    <div>
+
+    <body>
+        
+        <h1>Using the Modulus Operator: Great for Checking ODD or EVEN</h1>
+
+        <p>This page will call a simple program that checks if a number (numOne) is 
+        divisible by another number (numTwo).  The user will enter both numbers in 
+        the form, which gets submitted to the program. The result will be displayed at 
+        the bottom of this page. Please be sure to have a peek at the 
+        <a href="js/tut08-modulusoperator.js" target="_blank">actual javascript 
+        program</a> found in the "js" directory that accompanies this page, to see any 
+        comments and explanation I may have added into it. </p>
+
+        <form name="form" id="form" method="post" action="">
+            <p><label for =  "firstNumber">Enter the number to be checked:</label></p>
+            <p><input name = "firstNumber" id="firstNumber" type="text"></p>
+            <p><label for =  "secondNumber">Divide first number by:</label></p>
+            <p><input name = "secondNumber" id="secondNumber" type="text"></p>
+            <p><button type="button" onclick="moduloFunc();">Submit</button>
+        </form>
+
+        <p>Output:</p> 
+        <p id="p1"></p>
+           
+        </div>
+    
+    </body>
+
+</html>
