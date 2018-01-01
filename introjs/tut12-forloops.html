@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>tut12-forloops : Using 'for' loops to iterate/increment</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/tut12-forloops.js"></script>
+    </head>
+
+    <div>
+    <body>
+
+        <h1>For Loops: Iteration using a FOR Loop</h1>
+
+        <p>A 'for' loop in JavaScript appears as it does in C language for the most part. You can 
+        declare a var within a for loop, or you can create it at the top of the function in 
+        which the loop exists (or globally if desired, though global scope must be dealt with 
+        using caution, as with any other language).</p>
+
+        <p>A 'for' loop looks as follows: </p>
+
+        <p>for (initializer; condition; counter) {}<p>
+
+        <ul type="square">
+            <li>initializer: declared variable to hold starting number, to be used in the loop</li>
+            <li>condition: this MUST be an expression that returns true or false. It can be 
+                read as "Keep looping as long as this condition is true."</li>
+            <li>counter: this is how we change the variables initialized (either by increasing
+                or decreasing them). Commonly, we increment variables by 1 using the ++ 
+                operator and decrement by 1 using --.</li>
+        </ul>
+
+        <p>As long as the condition is true, the code inside the curly braces will run. After 
+        running, the counter expression will run, and then the condition will be checked again.</p>
+
+        <p>On this page, you will enter a starting number and an ending number. The simple goal 
+        of the combined JavaScript program will be to iterate from the first to the last, 
+        printing them on the page immediately after the "Do It!" button on a single line. 
+        Basic, but it certainly will illustrate how to use a for loop if you take a look at 
+        the <a href="js/tut12-forloops.js" target="_blank">actual JavaScript code</a> in the 
+        'js' folder accompanying this HTML document.</p>
+
+        <form name="form" id="userSuppliedNums" method="post" action="">
+
+            <p>
+            <label for "firstNum">Enter starting number: <label>
+                <input name="firstNum" id="firstNum" type="text"> 
+            <label for "lastNum">Enter ending number: </label>
+                <input name="lastNum" id="lastNum" type="text">
+            </p>
+            <p>
+            <button type="button" onclick="main();">Do It!</button>
+            </p>
+        
+        </form>
+
+        <p>OUTPUT:</p>
+        <p id="p1"></p>
+
+    </div>
+    </body>
+
+</html>

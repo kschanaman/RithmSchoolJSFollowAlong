@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>tut11-arrays3-length-slice.html : Playing With Length and Slice In Arrays</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/tut11-arrays3-length-slice.js"></script>
+    </head>
+
+    <div>
+    <body>
+        
+        <h1>Arrays3: Playing With Length and Slice in Arrays</h1>
+
+        <p>We can use the length property (it isn't a function) to determine how many elements
+        exist in an array. This can be handy when we come to the point where we need to know 
+        the maximum number of iterations to make covering an entire array via a loop, so we 
+        don't exceed that number. If we exceed the number of elements in an array, we will 
+        get 'undefined' results for all non-existent elements.</p>
+
+        <p>The slice() function, used by itself, will make a copy of an entire array. This 
+        is placed into a new variable for future use.  But slice also takes two arguments 
+        much like splice() covered in the last example (<a href="tut10-arrays2-splice.html" target="_blank">
+        tut10-arrays2-splice.html</a>). The first number is the first element where you want to 
+        begin slicing. The second number is the last element where you want to stop slicing 
+        (but that last element is NOT INCLUDED IN the slice - key point to remember!!). </p>
+
+        <p>In this page, below, you can create an array, add some items to it, look at the 
+        number of elements being displayed as you do (will appear under the array line), 
+        remove elements, create a new array using slice() to copy the first one, and to then 
+        be able to slice out sections from that copied array to then create a third array 
+        containing the sliced data. Be sure to check out the <a href="js/tut11-arrays3-length-slice.js">
+        actual JavaScript file</a> in the 'js' directory accompanying this page.</p>
+
+        <p>Your first created array: <span id="firstUserArrName"></span> = [<span id="firstArray"></span>]<br>
+        This array contains <span id="firstArrLen"></span> elements.</p>
+
+        <form name="nameFirstArr" id="nameFirstArr" method="post" action="">
+            <p>
+             <label for="getFirstArrName">Enter a name for your first array (one word, no spaces): </label>
+             <input name="getFirstArrName" id="getFirstArrName" type="text"></p>
+            <p>
+             <label for="addFirstArrEl">Add elements one at a time now (click button below after each): </label>
+             <input name="addFirstArrEl" id="addFirstArrEl" type="text"></p>
+            <p>
+            Below is a copy of the array (firstArray) you have been working on. The copy 
+            was made using slice() and was added to a different variable (Look at the 
+            JavaScript code file accompanying this HTML page to see how it's used).
+            </p>
+            <p id="displaySecondArrInfo"></p>
+            <p>
+            You can modify the copy without affecting the original. Just put a checkmark 
+            next to the selection below to pop() (remove) the last element for proof.
+            </p>
+            <p>
+            <input name="popOff" id="popOff" type="checkbox"> Pop the last element from the array</p>
+            <p>
+            <button type="button" onclick="main();">Create First Array</button></p>
+
+        </form>
+
+    </div>
+    </body>
+
+</html>
