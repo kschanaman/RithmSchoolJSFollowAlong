@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>tut14-whileloops :  How to use 'while' loops in JavaScript</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/tut14-whileloops.js"></script>
+    </head>
+
+    <div>
+    <body>
+
+        <h1>Using 'while' Loops in JavaScript</h1>
+
+        <p>While loops are similar to for loops, with the exception that you must manually 
+        add an increment or decrement statement within the loop, and your counter must 
+        be initialized before being used in that while loop.</p>
+
+        <p>In this page, you will be asked for two numbers which will be added together. 
+        A while loop will check to make sure you entered a number. As long as the input 
+        of either entry is NOT a number, the while loop will print an error message to this 
+        HTML page telling you one of the entries wasn't a valid number.  Once you've entered 
+        two actual numbers, the while loop will break out and have the program do the 
+        addition and output for you.</p>
+
+        <p>Be sure to check out the <a href="js/tut14-whileloops.js" target="_blank">
+        actual Javascript program file</a> that accompanies this page for details about how it 
+        works, as I have commented the code to that end.</p>
+
+        <form name="form" id="getTwoNums" method="post" action="">
+
+        <label for "getFirstNum">Enter first number: </label>
+            <input name="getFirstNum" id="getFirstNum" type="text">&nbsp;&nbsp;
+        <label for "getSecondNum">Enter second number: </label>
+            <input name="getSecondNum" id="getSecondNum" type="text"> &nbsp;&nbsp;
+        <button type="button" onclick="main();">Add Numbers</button>
+
+        </form>
+
+        <p>Output: </p>
+
+        <p id="p1"></p>
+
+    </div>
+    </body>
+
+</html>
