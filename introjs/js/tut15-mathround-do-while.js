@@ -49,7 +49,7 @@ function main() {
 
     } while (counter < floatArray.length)   // CHECK CONDITION. IF TRUE, CONTINUE. FALSE, EXIT.
 
-    // Display results to the HTML page
+    // Display results to the HTML pages
 
     resultWriter.innerHTML = resultArray;
     
