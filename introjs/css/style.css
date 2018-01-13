@@ -1,52 +1,59 @@
 a:link {
-    text-decoration: none;
-    color: #0198E1;
-    font-weight: bold;
+    text-decoration:    none;
+    color:              #0198E1;
+    font-weight:        bold;
 }
 
 a:visited {
-    text-decoration: none;
-    color: olive;
+    text-decoration:    none;
+    color:              olive;
 }
 
 a:hover {
-    text-decoration: underline;
-    color: orange;
+    text-decoration:    underline;
+    color:              orange;
 }
 
 a:active {
-    text-decoration: underline;
+    text-decoration:    underline;
 }
 
 div {
-    width: 950px;
-    margin-left: auto;
-    margin-right: auto;
+    width:              950px;
+    margin-left:        auto;
+    margin-right:       auto;
 }
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.6em;
-    color: #0198E1;
+    font-size:          1.6em;
+    color:              #0198E1;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    background-color: black;
-    color: #C0D9D9;
+    font-size:          1.2em;
+    background-color:   black;
+    color:              #C0D9D9;
 }
 
 pre {
-    font-family: monospace;
-    font-size: 1em;
-    background-color: black;
-    color: #66FF00;
+    font-family:        monospace;
+    font-size:          1em;
+    background-color:   black;
+    color:              #66FF00;
+}
+
+p.pOutClass {
+    font-family:        monospace;
+    font-size:          1em;
+    background-color:   black;
+    color:              #66FF00;
 }
 
 #p1 {
-    font-family: monospace;
-    font-size: 1em;
-    background-color: black;
-    color: #66FF00;
+    font-family:        monospace;
+    font-size:          1em;
+    background-color:   black;
+    color:              #66FF00;
 }
