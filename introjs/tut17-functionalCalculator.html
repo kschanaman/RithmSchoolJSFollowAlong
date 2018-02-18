@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Tutorial 17: Calculator Out of Functions</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/tut17-functionalCalculator.js"></script>
+    </head>
+
+    <body>
+    <div>
+
+        <h1>Using Functions as Calculator</h1>
+
+        <p>Carrying on with functions, we now play with sending arguments to them to be used 
+        in doing something somewhat useful.  The goal of this small application is to allow the 
+        visitor to enter two numbers, and to select what operation is to be performed with 
+        those two numbers:  add, subtract, multiply, or divide.  The operation will be selected 
+        by clicking on the necessary radio button. The necessary function in the 
+        <a href="js/tut17-functionalCalculator.js" target="_blank">JavaScript code file for this 
+        page</a> will then be called.  The function will perform the calculation and send 
+        the result to the desired part of the page below.</p>
+
+        <form name="appForm" id="functionalCalculator" method="post" action="">
+            <p>
+                <label for = "FirstNum">Enter First Number: </label>
+                <input name= "FirstNum" id="FirstNum" type="text">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <label for = "SecondNum">Enter Second Number: </label>
+                <input name= "SecondNum" id="SecondNum" type="text">
+            </p>
+            <p>
+                <label for = "SelectOps">Choose desired operation: </label>
+                <input type="radio" name="SelectOps" value="add" checked>Add 
+                <input type="radio" name="SelectOps" value="subtract">Subtract
+                <input type="radio" name="SelectOps" value="multiply">Multiply 
+                <input type="radio" name="SelectOps" value="divide">Divide 
+            </p>
+            <p>
+                <button type="button" onclick="main();">Submit</button>
+            </p>              
+
+        </form>
+
+        <p>OUTPUT:</p>
+
+        <p class="pOutClass" id="p1"></p>
+
+    </div>
+    </body>
+
+</html>
